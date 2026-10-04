@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Главная — Городская афиша</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">
+  <div class="container header__row">
+    <a class="logo" href="index.html">Афиша</a>
+    <label for="nav-toggle" class="burger">Меню</label>
+  </div>
+  <nav class="nav" aria-label="Основная навигация"><ul class="nav__list"><li><a class="nav__link is-active" href="index.html">Главная</a></li><li><a class="nav__link" href="pages/events.html">События</a></li><li><a class="nav__link" href="pages/organizers.html">Организаторы</a></li><li><a class="nav__link" href="pages/register.html">Регистрация</a></li></ul></nav>
+</header>
+<main>
+<section class="hero"><div class="container hero__grid">
+  <div class="hero__text">
+    <h1>Что происходит в городе в октябре</h1>
+    <p>Концерты, лекции, фестивали и ярмарки в одном месте. Выберите событие и зарегистрируйтесь за минуту.</p>
+    <div class="hero__actions"><a class="btn" href="pages/events.html">Смотреть афишу</a><a class="btn btn--ghost" href="pages/register.html">Зарегистрироваться</a></div>
+  </div>
+  <article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">12</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="images/poster1.svg" alt="Афиша: Концерт «Тихий оркестр»" width="600" height="400">
+    <span class="tag">Концерт</span>
+    <h3>Концерт «Тихий оркестр»</h3>
+    <p class="ticket__meta">Филармония, 19:00</p>
+    <a class="btn" href="pages/event.html">Подробнее</a>
+  </div>
+</article>
+</div></section>
+<section class="section"><div class="container">
+  <h2>Ближайшие события</h2>
+  <div class="grid grid--cards"><article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">12</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="images/poster1.svg" alt="Афиша: Концерт «Тихий оркестр»" width="600" height="400">
+    <span class="tag">Концерт</span>
+    <h3>Концерт «Тихий оркестр»</h3>
+    <p class="ticket__meta">Филармония, 19:00</p>
+    <a class="btn" href="pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">15</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="images/poster3.svg" alt="Афиша: Фестиваль уличной еды" width="600" height="400">
+    <span class="tag">Еда</span>
+    <h3>Фестиваль уличной еды</h3>
+    <p class="ticket__meta">Парк у реки, 12:00</p>
+    <a class="btn" href="pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">18</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="images/poster2.svg" alt="Афиша: Лекция «Город будущего»" width="600" height="400">
+    <span class="tag">Лекция</span>
+    <h3>Лекция «Город будущего»</h3>
+    <p class="ticket__meta">Библиотека, 18:30</p>
+    <a class="btn" href="pages/event.html">Подробнее</a>
+  </div>
+</article></div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container footer__row">
+    <p>Экзаменационный проект Мусабаев Талипжан PE-621</p>
+    <p><a href="pages/events.html">Все события</a> · <a href="pages/register.html">Регистрация</a></p>
+  </div>
+</footer>
+</body>
+</html>

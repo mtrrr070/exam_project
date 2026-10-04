@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>События — Городская афиша</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">
+  <div class="container header__row">
+    <a class="logo" href="../index.html">Афиша</a>
+    <label for="nav-toggle" class="burger">Меню</label>
+  </div>
+  <nav class="nav" aria-label="Основная навигация"><ul class="nav__list"><li><a class="nav__link" href="../index.html">Главная</a></li><li><a class="nav__link is-active" href="../pages/events.html">События</a></li><li><a class="nav__link" href="../pages/organizers.html">Организаторы</a></li><li><a class="nav__link" href="../pages/register.html">Регистрация</a></li></ul></nav>
+</header>
+<main>
+<section class="section"><div class="container">
+  <h1>Все события</h1>
+  <div class="filters" role="group" aria-label="Категории" style="margin-top:1.5rem">
+    <button class="chip is-active" type="button">Все</button><button class="chip" type="button">Музыка</button>
+    <button class="chip" type="button">Лекции</button><button class="chip" type="button">Еда</button><button class="chip" type="button">Комедия</button>
+  </div>
+  <div class="grid grid--cards"><article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">12</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster1.svg" alt="Афиша: Концерт «Тихий оркестр»" width="600" height="400">
+    <span class="tag">Концерт</span>
+    <h3>Концерт «Тихий оркестр»</h3>
+    <p class="ticket__meta">Филармония, 19:00</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">15</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster3.svg" alt="Афиша: Фестиваль уличной еды" width="600" height="400">
+    <span class="tag">Еда</span>
+    <h3>Фестиваль уличной еды</h3>
+    <p class="ticket__meta">Парк у реки, 12:00</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">18</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster2.svg" alt="Афиша: Лекция «Город будущего»" width="600" height="400">
+    <span class="tag">Лекция</span>
+    <h3>Лекция «Город будущего»</h3>
+    <p class="ticket__meta">Библиотека, 18:30</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">21</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster1.svg" alt="Афиша: Ночь театров" width="600" height="400">
+    <span class="tag">Театр</span>
+    <h3>Ночь театров</h3>
+    <p class="ticket__meta">Центр города, 20:00</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">25</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster3.svg" alt="Афиша: Маркет handmade" width="600" height="400">
+    <span class="tag">Ярмарка</span>
+    <h3>Маркет handmade</h3>
+    <p class="ticket__meta">Галерея «Корпус», 11:00</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article>
+<article class="ticket">
+  <div class="ticket__date"><span class="ticket__day">29</span><span>окт</span></div>
+  <div class="ticket__body">
+    <img src="../images/poster2.svg" alt="Афиша: Стендап-вечер" width="600" height="400">
+    <span class="tag">Комедия</span>
+    <h3>Стендап-вечер</h3>
+    <p class="ticket__meta">Клуб «Лофт», 21:00</p>
+    <a class="btn" href="../pages/event.html">Подробнее</a>
+  </div>
+</article></div>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container footer__row">
+    <p>© 2026 Городская афиша. Учебный проект.</p>
+    <p><a href="../pages/events.html">Все события</a> · <a href="../pages/register.html">Регистрация</a></p>
+  </div>
+</footer>
+</body>
+</html>

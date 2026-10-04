@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Регистрация — Городская афиша</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="header">
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Открыть меню">
+  <div class="container header__row">
+    <a class="logo" href="../index.html">Афиша</a>
+    <label for="nav-toggle" class="burger">Меню</label>
+  </div>
+  <nav class="nav" aria-label="Основная навигация"><ul class="nav__list"><li><a class="nav__link" href="../index.html">Главная</a></li><li><a class="nav__link" href="../pages/events.html">События</a></li><li><a class="nav__link" href="../pages/organizers.html">Организаторы</a></li><li><a class="nav__link is-active" href="../pages/register.html">Регистрация</a></li></ul></nav>
+</header>
+<main>
+<section class="section"><div class="container">
+  <h1 style="margin-bottom:1.5rem">Регистрация на событие</h1>
+  <form class="form" action="#" method="post">
+    <label class="field">Имя<input type="text" name="name" placeholder="Анна Иванова" required></label>
+    <label class="field">Email<input type="email" name="email" placeholder="name@mail.com" required></label>
+    <label class="field">Событие<select name="event"><option>Концерт «Тихий оркестр»</option><option>Фестиваль уличной еды</option><option>Лекция «Город будущего»</option><option>Ночь театров</option><option>Маркет handmade</option><option>Стендап-вечер</option></select></label>
+    <label class="field">Количество билетов<input type="number" name="count" min="1" max="10" value="1"></label>
+    <label class="check"><input type="checkbox" required> Согласен на обработку данных</label>
+    <button class="btn" type="submit">Отправить заявку</button>
+  </form>
+</div></section>
+</main>
+<footer class="footer">
+  <div class="container footer__row">
+    <p>© 2026 Городская афиша. Учебный проект.</p>
+    <p><a href="../pages/events.html">Все события</a> · <a href="../pages/register.html">Регистрация</a></p>
+  </div>
+</footer>
+</body>
+</html>
